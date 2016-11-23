@@ -1,0 +1,56 @@
+{
+    "pages": [
+      "pages/index/index",
+      "pages/service/service",
+      "pages/classify/classify",
+      "pages/basket/basket",
+      "pages/account/account"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#FF0000",
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "RGO DUTY FREE商店",
+      "backgroundColor": "#FF0000",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": true
+    },
+    "tabBar": {
+      "color":"#999999",
+      "backgroundColor": "#dddddd",
+      "selectedColor": "#FF0000",
+      "borderStyle": "white",
+      "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath":"images/home.png"
+      },{
+        "pagePath": "pages/service/service",
+        "text": "客服",
+        "iconPath": "images/service.png",
+         "selectedIconPath":"images/service.png"
+      },{
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "images/classify.png",
+         "selectedIconPath":"images/classify.png"
+      },{
+        "pagePath": "pages/basket/basket",
+        "text": "购物车",
+        "iconPath": "images/basket.png",
+         "selectedIconPath":"images/basket.png"
+      },{
+        "pagePath": "pages/account/account",
+        "text": "我的",
+        "iconPath": "images/account.png",
+         "selectedIconPath":"images/account.png"
+      }]
+    },
+    "networkTimeout": {
+      "request": 20000,
+      "connectSocket": 20000,
+      "uploadFile": 20000,
+      "downloadFile": 20000
+    },
+    "debug":true
+}
