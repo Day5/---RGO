@@ -1,0 +1,37 @@
+<view class="wrap">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrl}}">
+      <swiper-item>
+        <image src="{{item}}" class="swiper-img"/>
+      </swiper-item>
+    </block>
+  </swiper> 
+  <view class="menu">
+    <input typetype="text" placeholder="请输入你所搜索的商品" class="search" placeholder-class="search-placeholder"/>
+    <button></button>
+    <block wx:for="{{menu}}" wx:for-item="item">
+      <view class="menu-li">
+        <image src="{{item.url}}" class="menu-img"/>
+        <text class="menu-text">{{item.text}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="part sale-part">
+    <text class="title">促销商品</text>
+    <text class="more">更多 ></text>
+    <block wx:for="">
+    </block>
+  </view>
+  <view class="part good-part">
+    <text class="title">精品推荐</text>
+    <text class="more">更多 ></text>
+  </view>
+  <view class="part new-part">
+    <text class="title">新品上市</text>
+    <text class="more">更多 ></text>
+  </view>
+  <view class="part hot-part">
+    <text class="title">热销商品</text>
+    <text class="more">更多 ></text>
+  </view>
+</view>
